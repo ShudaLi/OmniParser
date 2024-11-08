@@ -2,6 +2,7 @@ import torch
 from ultralytics.nn.tasks import DetectionModel
 from safetensors.torch import load_file
 
+breakpoint()
 tensor_dict = load_file("weights/icon_detect/model.safetensors")
 
 model = DetectionModel('weights/icon_detect/model.yaml')
